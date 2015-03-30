@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:src="@drawable/shadow" />
+
+    <RelativeLayout
+        android:id="@+id/bigContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/shadow">
+
+        <ImageView
+            android:id="@+id/iconView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/mini_controller_img_placeholder" />
+
+        <ImageView
+            android:id="@+id/playPauseView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_av_pause_light" />
+
+        <ProgressBar
+            android:id="@+id/loadingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/playPauseView"
+            android:layout_alignLeft="@+id/playPauseView"
+            android:layout_alignRight="@+id/playPauseView"
+            android:layout_alignTop="@+id/playPauseView"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/playPauseView"
+            android:layout_toRightOf="@+id/iconView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/mini_controller_font_size_line1"
+            app:typeface="roboto_light" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_toLeftOf="@+id/playPauseView"
+            android:layout_toRightOf="@+id/iconView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/mini_controller_font_size_line2"
+            app:typeface="roboto_light" />
+    </RelativeLayout>
+</RelativeLayout>

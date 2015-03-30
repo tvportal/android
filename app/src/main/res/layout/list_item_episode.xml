@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?attr/list_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:app="http://schemas.android.com/apk/res/com.mitechlt.tvportal.play"
+            android:id="@+id/text1"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/tick_frame"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?android:textColorPrimary"
+            app:typeface="roboto_light" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:app="http://schemas.android.com/apk/res/com.mitechlt.tvportal.play"
+            android:id="@+id/text2"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tick_frame"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?android:textColorPrimary"
+            app:typeface="roboto_light" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tick_frame"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@color/list_divider" />
+
+        <FrameLayout
+            android:id="@+id/tick_frame"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:foreground="@drawable/list_selector_holo_light">
+
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/ic_tick_off" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

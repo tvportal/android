@@ -1,0 +1,17 @@
+You need to add the line keystore.props.file=<path to keystore.properties> to your local.properties file in order to compile.
+e.g. keystore.props.file=../keystore.properties
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Building a release version:
+
+1. Make sure your versionCode and versionNumber are up to date in 'version.properties'
+
+2. Check info.html in the /assets folder, and make sure the changelog and version numbers are up to date
+
+3. If you're building an official release, run gradlew assembleRelease from the command prompt (in the root dir)
+If it's a beta release, run gradlew assemblePublicBeta. This will take care of adding the 'beta' suffix to the version name
+
+------------------------------------------------------------------------------------------------------------------------------
+
+To test, run gradlew installRelease or installPublicBeta

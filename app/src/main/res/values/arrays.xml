@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="themes">
+        <item>@string/holo_light_theme</item>
+        <item>@string/holo_dark_theme</item>
+    </string-array>
+
+    <string-array name="tab_titles">
+        <item>@string/title_recent</item>
+        <item>@string/title_favourites</item>
+        <item>@string/title_movies</item>
+        <item>@string/title_tv_shows</item>
+    </string-array>
+
+    <string-array name="social_titles">
+        <item>@string/facebook</item>
+        <item>@string/google_plus</item>
+        <item>@string/twitter</item>
+        <item>@string/reddit</item>
+        <item>@string/instagram</item>
+    </string-array>
+
+    <array name="social_icons">
+        <item>@drawable/ic_facebook</item>
+        <item>@drawable/ic_google_plus</item>
+        <item>@drawable/ic_twitter</item>
+        <item>@drawable/ic_reddit</item>
+        <item>@drawable/ic_instagram</item>
+    </array>
+
+    <string-array name="playback_choices">
+        <item>@string/playback_local</item>
+        <item>@string/playback_third_party</item>
+    </string-array>
+
+    <array name="playback_icons">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_action_exit</item>
+    </array>
+
+</resources>

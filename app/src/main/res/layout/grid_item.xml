@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="185dp"
+    android:layout_height="264dp"
+    android:background="?attr/list_selector">
+
+    <com.devspark.robototextview.widget.RobotoTextView xmlns:app="http://schemas.android.com/apk/res/com.mitechlt.tvportal.play"
+        android:id="@+id/text1"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textColor="?android:textColorPrimary"
+        app:typeface="roboto_light" />
+</FrameLayout>

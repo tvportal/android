@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="list_selector" format="reference" />
+
+    <attr name="card_background" format="reference" />
+
+    <!-- Roboto TextView -->
+    <declare-styleable name="RobotoTextView">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="RobotoButton">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="RobotoEditText">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="RobotoExtractEditText">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <!-- Changing the attribute must be reflected in the com.devspark.robototextview.RobotoTypefaceManager -->
+    <attr name="typeface" format="enum">
+        <enum name="roboto_light" value="0" />
+        <enum name="roboto_regular" value="1" />
+    </attr>
+
+</resources>

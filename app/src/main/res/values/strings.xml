@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">TV Portal</string>
+
+    <!-- Menu items -->
+
+    <string name="pro">Premium</string>
+    <string name="cast">Chromecast</string>
+    <string name="cast_price">$2.00</string>
+    <string name="pro_price">$2.99</string>
+    <string name="action_cast_fake">ChromeCast</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_star">Favorite</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_themes">Change theme</string>
+    <string name="action_about">About</string>
+    <string name="action_feedback">Leave feedback</string>
+    <string name="action_share">Share</string>
+    <string name="action_social">Social</string>
+    <string name="action_upgrade">Upgrade</string>
+    <string name="action_sort">Sort order</string>
+    <string name="add_to_favourites">Add to favorites</string>
+    <string name="search_title">Search</string>
+
+    <!-- Toast messages -->
+    <string name="favourites_added">" added to favorites"</string>
+    <string name="favourites_removed">" removed from favorites"</string>
+    <string name="favourites_already_added">" is already a favorite!"</string>
+    <string name="mirror_null">"We couldn\'t retrieve this video. Please try another mirror."</string>
+
+    <!-- Dialog -->
+    <string name="button_play_store">Play Store</string>
+    <string name="button_purchase">Purchase</string>
+    <string name="cast_purchase">Please purchase the TV Portal Chromecast plugin to cast from TV Portal.</string>
+    <string name="pro_purchase">Please purchase TV Portal Premium to enable the use of 3rd party video players/download managers</string>
+    <string name="loading">Loading…</string>
+    <string name="fetching_link">We\'re fetching the link for you!</string>
+    <string name="not_five_hours_title">Can\'t watch video…</string>
+    <string name="not_five_hours_message">Sorry, you can\'t watch more than 2 episodes in the space of 5 hours.</string>
+    <string name="time_remaining">Time remaining:\n<xliff:g id="time">%s</xliff:g></string>
+    <string name="btn_close">Close</string>
+    <string name="btn_remind">Later</string>
+    <string name="btn_yes">I\'m in</string>
+    <string name="btn_no">No thanks</string>
+    <string name="promo_dialog_title">ChromeCast Giveaway</string>
+    <string name="promo_dialog_message">We\'re giving away 10 ChromeCasts! Click below for your chance to win.</string>
+    <string name="loyalty_upgrade_dialog_message">Thank you for your continued support of TV Portal. \n\nThink of this free upgrade as a thank you for your loyalty!</string>
+    <string name="startup_dialog_title">Welcome!</string>
+    <string name="startup_dialog_message">Thank you for downloading TV Portal. You may use TV Portal unrestricted for one week. After that, you will be limited to watching a maximum of 2 episodes in a 5 hour period.\n\nYou can remove ads and limits at any time by unlocking the premium version.</string>
+    <string name="no_video_player">Couldn\'t find an app to play the video.</string>
+    <string name="no_social_intent_receiver">Couldn\'t find an app to view the link.</string>
+    <string name="social_dialog_title">Social</string>
+    <string name="social_dialog_message">Follow us for updates, special offers and previews of upcoming versions!</string>
+    <string name="social_dialog_annoying_checkbox">Show again on startup?</string>
+    <string name="chooser_dialog_title">Play video with:</string>
+    <string name="chooser_dialog_remember_choice">Remember my choice?</string>
+    <string name="chooser_dialog_always">Always</string>
+    <string name="chooser_dialog_once">Just Once</string>
+    <string name="no_connection">It appears you are not connected to the Internet.\nPlease check your connection and restart TV Portal.</string>
+    <string name="update_available">Update available!</string>
+    <string name="new_version_available">You are currently using <xliff:g id="old_version">%1$s</xliff:g> . Would you like to Update to version <xliff:g id="new_version">%2$s</xliff:g> ?</string>
+
+    <!-- Preferences -->
+    <string name="pref_title_clear_default_player">Clear default player</string>
+    <string name="pref_summary_clear_default_player">Press to clear the default player. This will reset the preference to launch either TV Portal\'s in-built player or external players.</string>
+    <string name="pref_screen_category_defaults">Defaults</string>
+
+    <!-- Empty list text -->
+    <string name="empty_favourites">No favorites saved. Click the \'favorite\' icon on a movie or TV show to see it here!</string>
+    <string name="empty_recents">No recents found. Watch a movie or TV show to see it here.</string>
+    <string name="empty_mirrors">Sorry, we couldn\'t find any mirrors for you.\n\nCheck your connection or try enabling the \'proxy\' below.\n\nPress anywhere to retry…</string>
+    <string name="empty_movies">Sorry, we couldn\'t find any movies for you.\n\nCheck your connection or try enabling the \'proxy\' below.\n\nPress anywhere to retry…</string>
+    <string name="empty_tv_shows">Sorry, we couldn\'t find any tv shows for you.\n\nCheck your connection or try enabling the \'proxy\' below.\n\nPress anywhere to retry…</string>
+
+    <string name="empty_movies_query">Sorry, we couldn\'t find any movies with \'<xliff:g id="name">%s</xliff:g>\' in the name.\n\nCheck your connection or try enabling the \'proxy\' below.\n\n Press anywhere to retry…</string>
+    <string name="empty_tv_shows_query">Sorry, we couldn\'t find any tv shows with \'<xliff:g id="name">%s</xliff:g>\' in the name.\n\nCheck your connection or try enabling the \'proxy\' below.\n\n Press anywhere to retry…</string>
+
+    <string name="use_proxy">Enable proxy</string>
+
+    <string name="easter_egg_hint">When does the narwhal bacon?</string>
+    <string name="easter_egg_answer">Midnight</string>
+    <string name="easter_egg_wrong_answer">Nope…</string>
+
+    <string name="unknown">Unknown</string>
+
+    <!-- Contextual Action Bar items -->
+    <plurals name="selected_items">
+        <item quantity="one">%d item selected</item>
+        <item quantity="other">%d items selected</item>
+    </plurals>
+
+    <!-- Used for the theme selector -->
+    <string name="change_themes">Change theme</string>
+    <string name="holo_light_theme">Light</string>
+    <string name="holo_dark_theme">Dark</string>
+
+    <string name="title_mirrors">Mirrors</string>
+    <string name="title_recent">Recent</string>
+    <string name="title_favourites">Favorites</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_tv_shows">TV Shows</string>
+
+    <string name="mirror">Mirror</string>
+
+    <!-- Social dialog titles -->
+    <string name="reddit">Reddit</string>
+    <string name="twitter">Twitter</string>
+    <string name="google_plus">Google+</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+
+    <!-- Sort order options -->
+    <string name="sort_default">Default</string>
+    <string name="movies_az">Movies A-Z</string>
+    <string name="tv_shows_az">TV Shows A-Z</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="playback_local">TV Portal Player</string>
+    <string name="playback_third_party">Other</string>
+
+    <!-- Error messages -->
+    <string name="failed_to_set_volume">Failed to set the volume</string>
+    <string name="failed_to_launch_app">Failed to launch application</string>
+    <string name="failed_to_set_mute">Failed to adjust the volume mute</string>
+    <string name="failed_to_find_app">The application you are trying to launch is not available on your Chromecast device</string>
+    <string name="failed_app_launch_timeout">The request to launch the application has timed out!</string>
+    <string name="failed_to_play">Failed to start the playback of media</string>
+    <string name="failed_to_pause">Failed to pause the playback of media</string>
+    <string name="failed_to_connect">Could not connect to the device</string>
+    <string name="failed_to_seek">Failed to seek to the specified position on the remote device</string>
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_unaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="connection_temp_lost">Connection to the cast device is temporarily lost</string>
+    <string name="connection_recovered">Connection to the cast device is recovered</string>
+    <string name="connection_lost_retry">Connection to the cast device has been temporarily lost. Application is trying to recover connection, please try again later</string>
+    <string name="connection_lost">No connection to the cast device exist</string>
+    <string name="failed_to_perform_action">Sorry, ran into issues performing the task you wanted</string>
+    <string name="oops">Oops</string>
+
+    <!-- acra Error Logging -->
+    <string name="crash_dialog_title">TV Portal has crashed</string>
+    <string name="crash_dialog_text">Please help us fix this by sending us your error data.</string>
+    <string name="crash_dialog_comment_prompt">If you have any additional questions or comments, please leave them below</string>
+    <string name="crash_dialog_ok_toast">We appreciate your patience while we try and perform our magic!</string>
+
+</resources>

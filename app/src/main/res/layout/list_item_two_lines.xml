@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?attr/list_selector"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp">
+
+    <com.devspark.robototextview.widget.RobotoTextView xmlns:app="http://schemas.android.com/apk/res/com.mitechlt.tvportal.play"
+        android:id="@+id/text1"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="?android:textColorPrimary"
+        app:typeface="roboto_light" />
+
+    <com.devspark.robototextview.widget.RobotoTextView xmlns:app="http://schemas.android.com/apk/res/com.mitechlt.tvportal.play"
+        android:id="@+id/text2"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="?android:textColorSecondary"
+        app:typeface="roboto_light" />
+</LinearLayout>

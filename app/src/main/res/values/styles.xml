@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="verticalTextStyle"
+        parent="android:Widget.TextView">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/background_light</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Blue.Light</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Blue.Light</item>
+        <item name="android:icon">@drawable/ic_action_launcher</item>
+        <item name="icon">@drawable/ic_action_launcher</item>
+        <item name="list_selector">@drawable/list_selector_holo_light</item>
+        <item name="card_background">@drawable/ic_grid_card_background</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDark" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@drawable/background_dark</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Blue.Dark</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Blue.Dark</item>
+        <item name="android:icon">@drawable/ic_action_launcher</item>
+        <item name="icon">@drawable/ic_action_launcher</item>
+        <item name="list_selector">@drawable/list_selector_holo_dark</item>
+        <item name="card_background">@drawable/ic_grid_card_background_dark</item>
+    </style>
+
+    <style name="ActionBar.Solid.Blue.Light" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid</item>
+        <item name="background">@drawable/ab_solid</item>
+        <item name="android:subtitleTextStyle">@style/ActionBar.SubtitleTextStyleLight</item>
+        <item name="subtitleTextStyle">@style/ActionBar.SubtitleTextStyleLight</item>
+        <item name="android:titleTextStyle">@style/ActionBar.titleTextStyleLight</item>
+        <item name="titleTextStyle">@style/ActionBar.titleTextStyleLight</item>
+    </style>
+
+    <style name="ActionBar.Solid.Blue.Dark" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid</item>
+        <item name="background">@drawable/ab_solid</item>
+        <item name="android:subtitleTextStyle">@style/ActionBar.SubtitleTextStyleDark</item>
+        <item name="subtitleTextStyle">@style/ActionBar.SubtitleTextStyleDark</item>
+        <item name="android:titleTextStyle">@style/ActionBar.titleTextStyleDark</item>
+        <item name="titleTextStyle">@style/ActionBar.titleTextStyleDark</item>
+    </style>
+
+    <style name="ActionBar.SubtitleTextStyleLight" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+
+    <style name="ActionBar.SubtitleTextStyleDark" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="ActionBar.titleTextStyleLight" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+
+    <style name="ActionBar.titleTextStyleDark" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <!-- Extends the base theme but removes the Action Bar drop shadow - which isn't being made transparent -->
+    <style name="AppThemeLight.TransparentDropShadow" parent="AppThemeLight">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Extends the base theme but removes the Action Bar drop shadow - which isn't being made transparent -->
+    <style name="AppThemeDark.TransparentDropShadow" parent="AppThemeDark">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="starRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_stars</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+    <style name="starRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_stars_small</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+    </style>
+
+</resources>

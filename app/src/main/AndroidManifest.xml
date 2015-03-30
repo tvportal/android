@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mitechlt.tvportal.play">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Used to display ads -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Used to get list of email addresses to detect upgrade -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Used for auto update -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- acra Used to get Log to send to Tv portal -->
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+
+    <!-- Potential fix for Google TV. Specifies the touchscreen is not required (though maybe it is?) -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppThemeLight"
+        android:name="com.mitechlt.tvportal.play.TVPortalApplication">
+
+        <activity
+            android:name="com.revmob.ads.fullscreen.FullscreenActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <meta-data
+            android:name="com.revmob.app.id"
+            android:value="53347dee00b628f37bc0b657" />
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".activities.MainActivity" />
+
+        <activity
+            android:name="com.mitechlt.tvportal.play.activities.MainActivity"
+            android:theme="@style/AppThemeLight"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name="com.mitechlt.tvportal.play.activities.MovieActivity"
+            android:theme="@style/AppThemeLight" />
+
+        <activity
+            android:name="com.mitechlt.tvportal.play.activities.SettingsActivity"
+            android:theme="@style/AppThemeLight" />
+
+        <activity
+            android:name="com.mitechlt.tvportal.play.activities.TVShowActivity"
+            android:theme="@style/AppThemeLight" />
+        <activity
+            android:name="com.mitechlt.tvportal.play.activities.LocalPlayerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.sample.castcompanionlibrary.cast.player.VideoCastControllerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.google.sample.castcompanionlibrary.remotecontrol.VideoIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="com.google.sample.castcompanionlibrary.action.toggleplayback" />
+                <action android:name="com.google.sample.castcompanionlibrary.action.stop" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.sample.castcompanionlibrary.notification.VideoCastNotificationService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.sample.castcompanionlibrary.action.toggleplayback" />
+                <action android:name="com.google.sample.castcompanionlibrary.action.stop" />
+                <action android:name="com.google.sample.castcompanionlibrary.action.notificationvisibility" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.mitechlt.tvportal.play.databases.FavoritesContentProvider"
+            android:authorities="com.mitechlt.tvportal.play.favorites.contentprovider"
+            android:exported="true" />
+
+        <provider
+            android:name="com.mitechlt.tvportal.play.databases.TrackingContentProvider"
+            android:authorities="com.mitechlt.tvportal.play.tracking.contentprovider"
+            android:exported="true" />
+
+        <provider
+            android:name="com.mitechlt.tvportal.play.databases.RecentContentProvider"
+            android:authorities="com.mitechlt.tvportal.play.recent.contentprovider"
+            android:exported="true" />
+
+        <!-- Play Services (for AdMob) -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- acra automated crash report diolog activity -->
+        <activity android:name="org.acra.CrashReportDialog"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true" />
+    </application>
+
+</manifest>

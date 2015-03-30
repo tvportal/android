@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="?attr/card_background"
+    android:foreground="?attr/list_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/list_selector">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:app="http://schemas.android.com/apk/res/com.mitechlt.tvportal.play"
+            android:id="@+id/text1"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/type_background"
+            android:layout_toRightOf="@id/image1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textColor="?android:textColorPrimary"
+            app:typeface="roboto_light" />
+
+        <RelativeLayout
+            android:id="@+id/type_background"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp">
+
+            <com.devspark.robototextview.widget.RobotoTextView xmlns:app="http://schemas.android.com/apk/res/com.mitechlt.tvportal.play"
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_micro"
+                app:typeface="roboto_light" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>
