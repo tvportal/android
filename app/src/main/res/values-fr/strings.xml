@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">TV Portal</string>
+
+    <!-- Menu items -->
+
+    <string name="pro">Premium</string>
+    <string name="cast">Chromecast</string>
+    <string name="cast_price">2,00$</string>
+    <string name="pro_price">2,99$</string>
+    <string name="action_cast_fake">ChromeCast</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_search">Recherche</string>
+    <string name="action_star">Favoris</string>
+    <string name="action_remove">Retirer</string>
+    <string name="action_themes">Changer le thème</string>
+    <string name="action_about">À propos</string>
+    <string name="action_feedback">Commentaires</string>
+    <string name="action_share">Partager</string>
+    <string name="action_social">Média sociaux</string>
+    <string name="action_upgrade">Mise-à-jour</string>
+    <string name="action_sort">Ordre de tri</string>
+    <string name="add_to_favourites">Ajouter aux favoris</string>
+    <string name="search_title">Recherche</string>
+
+    <!-- Toast messages -->
+    <string name="favourites_added">" ajouté aux favoris"</string>
+    <string name="favourites_removed">" retiré des favoris"</string>
+    <string name="favourites_already_added">" est déjà un favori!"</string>
+    <string name="mirror_null">"Nous n\'avons pas pu retrouver cette vidéo. Veuillez réessayer un autre miroir."</string>
+
+    <!-- Dialog -->
+    <string name="button_play_store">Play Store</string>
+    <string name="button_purchase">Acheter</string>
+    <string name="cast_purchase">Veuillez acheter le plugin TV Portal Chromecast pour diffuser à partir de TV Portal.</string>
+    <string name="pro_purchase">Veuillez acheter TV Portal Premium pour activer l\'utilisation de lecteurs vidéo ou des gestionnaires de téléchargement tierce partie</string>
+    <string name="loading">Chargement</string>
+    <string name="fetching_link">Nous retrouvons le liens pour vous!</string>
+    <string name="not_five_hours_title">Vous ne pouvez voir la vidéo…</string>
+    <string name="not_five_hours_message">Désolé, vous ne pouvez pas voir plus de 2 épisodes dans l\'espace de 5 heures.</string>
+    <string name="time_remaining">Temps restant:\n<xliff:g id="time">%s</xliff:g></string>
+    <string name="btn_close">Fermer</string>
+    <string name="btn_remind">Plus tard</string>
+    <string name="btn_yes">Oui</string>
+    <string name="btn_no">Non merci</string>
+    <string name="promo_dialog_title">Tirage d\'un ChromeCast</string>
+    <string name="promo_dialog_message">Nous faisons tirer 10 ChromeCasts! Cliquez en bas pour avoir votre chance de gagner.</string>
+    <string name="loyalty_upgrade_dialog_message">Merci pour votre support continu de TV Portal. \n\nPrenez cette mise à jour gratuite en cadeau pour vous remercier de votre loyauté!</string>
+    <string name="startup_dialog_title">Bienvenue!</string>
+    <string name="startup_dialog_message">Merci d\'avoir téléchargé TV Portal. Vous pouvez utilier TV Portal gratuitement pour une semaine. Après cette période, vous serez limité à un maximum de  2 épisodes pour chaque période de 5 heures.\n\nVous pouver retirer les publicités et les limites en tout temps en achatant la version premium.</string>
+    <string name="no_video_player">Impossible de trouver un lecteur vidéo pour lire la vidéo.</string>
+    <string name="no_social_intent_receiver">Impossible de trouver une application pour voir le lien.</string>
+    <string name="social_dialog_title">Média sociaux</string>
+    <string name="social_dialog_message">Suivez nous pour les mises-à-jours, les offres spéciales et les aperçus des prochaines versions!</string>
+    <string name="social_dialog_annoying_checkbox">Voir au démarrage?</string>
+    <string name="chooser_dialog_title">Lire la vidéo avec:</string>
+    <string name="chooser_dialog_remember_choice">Se souvenir de mon choix?</string>
+    <string name="chooser_dialog_always">Toujours</string>
+    <string name="chooser_dialog_once">Juste une fois</string>
+    <string name="no_connection">Il semble que vous n\'êtes pas connecté à Internet. \nVeuillez vérifier votre connection et redémarer TV Portal.</string>
+    <string name="update_available">Mise-à-jour disponible!</string>
+    <string name="new_version_available">Vous utilisez présentement <xliff:g id="old_version">%1$s</xliff:g> . Voulez-vous effectuer la mise-à-jour vers <xliff:g id="new_version">%2$s</xliff:g> ?</string>
+
+    <!-- Preferences -->
+    <string name="pref_title_clear_default_player">Réinitialiser le lecteur par défaut</string>
+    <string name="pref_summary_clear_default_player">Appuyez pour réinitialiser le lecteur par défaut. Ceci va supprimer la préférence pour ouvrir soit le lecteur intégré à TV Portal ou les lecteurs externes.</string>
+    <string name="pref_screen_category_defaults">Défauts</string>
+
+    <!-- Empty list text -->
+    <string name="empty_favourites">Pas de préférences sauvegardées. Cliquez l'icone \'favoris\' sur un film ou série pour le voir ici!</string>
+    <string name="empty_recents">Pas de fichiers récents trouvés. Regardez un film ou série pour le voir ici.</string>
+    <string name="empty_mirrors">Désolé, nous n\'avons pas trouvé de miroir pour vous.\n\nVérifiez votre connection ou essayez d\'activer le \'proxy\'.\n\nAppuyex pour réessayer…</string>
+    <string name="empty_movies">Désolé, nous n\'avons pas trouvé de films pour vous.\n\nVérifiez votre connection ou essayez d\'activer le \'proxy\'.\n\nAppuyex pour réessayer…</string>
+    <string name="empty_tv_shows">Désolé, nous n\'avons pas trouvé de séries pour vous.\n\nVérifiez votre connection ou essayez d\'activer le \'proxy\'.\n\nAppuyex pour réessayer…</string>
+
+    <string name="empty_movies_query">Désolé, nous n\'avons pas trouvé de film contenant \'<xliff:g id="name">%s</xliff:g>\' dans le nom.\n\nVérifiez votre connection ou essayez d\'activer le \'proxy\'.\n\nAppuyex pour réessayer…</string>
+    <string name="empty_tv_shows_query">Désolé, nous n\'avons pas trouvé de série contenant \'<xliff:g id="name">%s</xliff:g>\' dans le nom.\n\nVérifiez votre connection ou essayez d\'activer le \'proxy\'.\n\nAppuyex pour réessayer…</string>
+
+    <string name="use_proxy">Activer le proxy</string>
+
+    <!-- Those doesn't seem to be translatable -->
+    <string name="easter_egg_hint">When does the narwhal bacon?</string>
+    <string name="easter_egg_answer">Midnight</string>
+    <string name="easter_egg_wrong_answer">Nope…</string>
+
+    <string name="unknown">Inconnu</string>
+
+    <!-- Contextual Action Bar items -->
+    <plurals name="selected_items">
+        <item quantity="one">%d élément sélectionné</item>
+        <item quantity="other">%d éléments sélectionnés</item>
+    </plurals>
+
+    <!-- Used for the theme selector -->
+    <string name="change_themes">Changer le thème</string>
+    <string name="holo_light_theme">Clair</string>
+    <string name="holo_dark_theme">Sombre</string>
+
+    <string name="title_mirrors">Miroirs</string>
+    <string name="title_recent">Récents</string>
+    <string name="title_favourites">Favoris</string>
+    <string name="title_movies">Films</string>
+    <string name="title_tv_shows">Séries</string>
+
+    <string name="mirror">Miroir</string>
+
+    <!-- Social dialog titles -->
+    <string name="reddit">Reddit</string>
+    <string name="twitter">Twitter</string>
+    <string name="google_plus">Google+</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+
+    <!-- Sort order options -->
+    <string name="sort_default">Par défaut</string>
+    <string name="movies_az">Films A-Z</string>
+    <string name="tv_shows_az">Séries A-Z</string>
+
+    <string name="cancel">Annuler</string>
+
+    <string name="playback_local">Lecteur TV Portal</string>
+    <string name="playback_third_party">Autre</string>
+
+    <!-- Error messages -->
+    <string name="failed_to_set_volume">Échec lors de l\'ajustement du volume</string>
+    <string name="failed_to_launch_app">Échec lors du démarrage de l\'application</string>
+    <string name="failed_to_set_mute">Échec lors de la mise en sourdine du volume</string>
+    <string name="failed_to_find_app">L\'application que vous tenter d\'ouvrir n\'est pas disponible sur votre Chromecast</string>
+    <string name="failed_app_launch_timeout">La requête pour lancer l\'application à dépassé le délais!</string>
+    <string name="failed_to_play">Échec lors de la lecture du média</string>
+    <string name="failed_to_pause">Échec lors le \'arret de la lecture du média</string>
+    <string name="failed_to_connect">Impossible de se connecter à l\'appareil</string>
+    <string name="failed_to_seek">Échec lors de la recherche de la position de l\'appareil distant</string>
+    <string name="video_error_media_load_timeout">Le chargement du média a dépassé le délais</string>
+    <string name="video_error_server_unaccessible">Le serveur n\'est pas rejoignable</string>
+    <string name="video_error_unknown_error">Échec du chargement du vidéo</string>
+    <string name="connection_temp_lost">La connection vers l\'appareil de diffusion est temporairement perdue</string>
+    <string name="connection_recovered">La connection vers l\'appareil de diffusion est maintenant retrouvée</string>
+    <string name="connection_lost_retry">La connection vers l\'appareil de diffusion est temporairement perdue. L\'application tente de restaurer la connection, veuillez réessayer plus tard</string>
+    <string name="connection_lost">Aucune connection vers l\'appareil de diffusion existante</string>
+    <string name="failed_to_perform_action">Désolé, nous avons rencontré des problèmes avec la tâche demandée</string>
+    <string name="oops">Oups</string>
+
+    <!-- acra Error Logging -->
+    <string name="crash_dialog_title">TV Portal a planté</string>
+    <string name="crash_dialog_text">Aidez-nous à réparer cette erreur en nous envoyant les données.</string>
+    <string name="crash_dialog_comment_prompt">Si vous avez des questions ou des commentaires additionnels, veuillez les mentionner plus bas</string>
+    <string name="crash_dialog_ok_toast">Nous apprécions votre patience pendant que nous faisons de la magie!</string>
+
+</resources>
